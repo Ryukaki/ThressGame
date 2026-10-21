@@ -16,17 +16,17 @@ Play at [playanarchychess.com](https://playanarchychess.com).
 - **Scoreboard** - persistent leaderboard tracking wins/losses/draws per player (IP-hashed, no PII stored)
 
 ## Setup
+### Get Git and Node.js
+Git: https://git-scm.com/
 
-### Prerequisites
-
-- Node.js 18+
+The game needs Node.js 18+, if you don't have NodeJS download it at: https://nodejs.org/en/download/
 
 ### Install
 
+You can download the game files you can either click code (the green button on the top right) -> download zip or run:
 ```bash
-git clone https://github.com/your-username/chess.git
+git clone https://github.com/Ryukaki/ThressGame
 cd chess
-npm install
 ```
 
 ### Environment Variables
@@ -44,6 +44,7 @@ BASE_PATH=/chess
 npm start        # production
 npm run dev      # development (auto-reload)
 ```
+You can now play offline by accessing [http://localhost:3000/](http://localhost:3000/).
 
 ## Project Structure
 
@@ -64,7 +65,7 @@ Every 3 moves, the active player is shown 3 randomly-weighted rule cards. They p
 
 Multiple rules stack simultaneously. The system handles conflicts, field restrictions, and deadlock detection automatically.
 
-##Responsible AI Disclosure
+## Responsible AI Disclosure
 
 Claude Code used to handle deployments/git pushes and generate changelog summaries because I am lazy. 
 
